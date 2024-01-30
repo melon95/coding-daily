@@ -1,0 +1,30 @@
+name: Daily Coding
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20"
+      
+      - name: Resolve Leetcode Daily Question
+        uses: melon95/leetcode-daily-question-action@v1.0.0
+
+      - name: Git Commit
+        run: |
+          git config user.name "melon95"
+          git config user.email "lijunwork95@gmail.com"
+          git add .
+          git commit -m "feat 🦈: today's daily leetcode question added"
+
