@@ -1,9 +1,7 @@
 name: Daily Coding
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,7 +15,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "20"
-      
+
       - name: Resolve Leetcode Daily Question
         uses: melon95/leetcode-daily-question-action@v1.0.0
 
@@ -27,4 +25,4 @@ jobs:
           git config user.email "lijunwork95@gmail.com"
           git add .
           git commit -m "feat 🦈: today's daily leetcode question added"
-
+          git push
