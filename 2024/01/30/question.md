@@ -1,0 +1,1 @@
+https://leetcode.cn/problems/minimum-seconds-to-equalize-a-circular-array/
