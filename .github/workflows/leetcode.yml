@@ -25,4 +25,4 @@ jobs:
           git config user.email "lijunwork95@gmail.com"
           git add .
           git commit -m "feat 🦈: today's daily leetcode question added"
-          git push
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/melon95/coding-daily.git HEAD:main
