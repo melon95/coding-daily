@@ -1,0 +1,1 @@
+https://leetcode.cn/problems/range-sum-query-immutable/
