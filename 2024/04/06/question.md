@@ -1,0 +1,1 @@
+https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/
