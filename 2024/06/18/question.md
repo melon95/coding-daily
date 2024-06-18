@@ -1,0 +1,1 @@
+https://leetcode.cn/problems/apply-discount-to-prices/
